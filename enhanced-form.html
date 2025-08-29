@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 page demonstrating lists, tables, media, and a complete HTML5 form with accessibility and validation.">
+    <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Page with Forms</h1>
+    <nav>
+        <ul>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="lists">
+        <h2>My Favorite Hobbies</h2>
+        <ul>
+            <li>Reading books</li>
+            <li>Coding projects</li>
+            <li>Playing games</li>
+        </ul>
+        <h3>Daily Routine</h3>
+        <ol>
+            <li>Wake up early</li>
+            <li>Exercise</li>
+            <li>Work on assignments</li>
+        </ol>
+    </section>
+
+    <section id="table">
+        <h2>Sample Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>Nairobi</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>30</td>
+                    <td>Mombasa</td>
+                </tr>
+                <tr>
+                    <td>Alex</td>
+                    <td>28</td>
+                    <td>Kisumu</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Media Content</h2>
+        <figure>
+            <img src="sample-image.jpg" alt="Sample descriptive image" width="300">
+            <figcaption>Sample Image Caption</figcaption>
+        </figure>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="400">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <section id="form">
+        <h2>Sign Up Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com"><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="4" placeholder="Choose a username"><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6" placeholder="Enter password"><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br><br>
+
+                <label for="hobbies">Select Hobby:</label>
+                <select id="hobbies" name="hobbies" required>
+                    <option value="">--Select--</option>
+                    <option value="reading">Reading</option>
+                    <option value="coding">Coding</option>
+                    <option value="gaming">Gaming</option>
+                </select><br><br>
+
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself"></textarea><br><br>
+
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 My HTML5 Enhanced Form Page. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
